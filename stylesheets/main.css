@@ -1,0 +1,70 @@
+
+html {
+	background:	url("../img/bkg_mesh.png"),
+	radial-gradient(
+		circle at center,
+		#000 0%, 90%,
+		#228 100%
+	);
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #B90FFF;
+}
+
+a:hover {
+	animation-name: linkHover;
+	animation-duration: 0.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes linkHover {
+	0% {
+		color: #B90FFF;
+		filter: drop-shadow(0px 0px 8px #B90FFF);
+	}
+	100% {
+		color: #EEE;
+		filter: drop-shadow(0px 0px 8px #EEE);
+	}
+}
+
+.box {
+	border-image: url("../img/window_border.png") 25 fill repeat;
+	border-image-width: 25px;
+	padding: 5px;
+	color: #00A7FF;
+	background: linear-gradient(
+		10deg,
+		#226 0%, 20%,
+		#000 60%,
+		#226 100%
+	);
+}
+
+.blueGlow {
+	filter: drop-shadow(0px 0px 8px rgba( 0, 167, 255, 1));
+}
+
+.flexbox {
+	display: flex;
+}
+
+.noShow {
+	display: none;
+}
+
+#sidebar {
+	flex: 20%;
+}
+
+#content-container {
+	flex: 80%;
+	padding: 10px;
+}
+
+.centerImg {
+	transform: translateY(20%);
+}
