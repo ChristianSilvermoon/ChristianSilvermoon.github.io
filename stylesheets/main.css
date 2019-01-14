@@ -56,6 +56,10 @@ a:hover {
 	display: none;
 }
 
+.smallText {
+	font-size: 0.7em;
+}
+
 #sidebar {
 	flex: 20%;
 }
